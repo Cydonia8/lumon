@@ -28,7 +28,7 @@ nav ul li{
     margin-bottom: 8rem;
 }
 nav ul li:hover{
-    border-left: 5px solid white;
+    border-top: 2.5px solid white;
     transition: .7s;
 }
 nav ul li a{
