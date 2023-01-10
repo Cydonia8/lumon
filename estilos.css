@@ -2,13 +2,39 @@
     font-family: 'Manifold Demibold';
     src: url('fonts/manifoldCF/Fontspring-DEMO-manifoldextendedcf-bold.otf');
 }
-
+@font-face {
+    font-family: 'Forma Bold';
+    src: url('fonts/formadjr/FormaDJRBanner-Bold-Testing.ttf');
+}
+@font-face {
+    font-family: 'Optima';
+    src: url('fonts/optima/OPTIMA_B.TTF');
+}
+@font-face {
+    font-family: 'Scriptorama';
+    src: url('fonts/scriptorama/design.jasonwalcott.Scriptorama\ Tradeshow\ JF.ttf');
+}
+@keyframes movimientoFlecha {
+    0%{
+        bottom: 2%;
+    }
+    50%{
+        bottom: 5%;
+    }
+    100%{
+        bottom: 2%;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
 body{
     display: grid;
     grid-template-columns: 1fr 0.2fr;
     grid-template-rows: 1fr;
     margin: 0;
     background-color: black;
+    font-family: 'Manifold Demibold';
 }
 header{
     grid-row: 1;
@@ -27,16 +53,82 @@ header a{
 nav ul li{
     margin-bottom: 8rem;
 }
-nav ul li:hover{
-    border-top: 2.5px solid white;
+nav ul li a::before{
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 4px;
+    margin-right: 5px;
+}
+nav ul li a:hover::before{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 4px;
+    background-color: white;
     transition: .7s;
+    transform: rotate(180deg);
 }
 nav ul li a{
     text-decoration: none;
-    color: white;
-    font-family: 'Manifold Demibold';
-    font-size: large;
-}
+    color: white;   
+    font-size: large;}
 header nav ul{
-    border-left: 3px groove white;
+    padding: 0;
+    text-align: center;
 }
+h1{
+    font-size: 4rem;
+    margin-left: 2rem;
+    letter-spacing: 0.15em;
+    line-height: 2em;
+}
+.resaltar{
+    text-decoration: underline;
+}
+.cabecera{
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.cabecera i{
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    animation-name: movimientoFlecha;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+.cabecera i:hover{
+    animation-name: none;
+}
+#introduccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    height: 100vh;
+}
+blockquote:before { 
+    content: open-quote; 
+}
+blockquote:after  { 
+    content: close-quote; 
+}
+#introduccion div:first-of-type{
+    width: 50%;
+}
+#introduccion div:nth-of-type(2){
+    width: 50%;
+    align-self: flex-end;
+}
+
