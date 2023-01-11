@@ -68,14 +68,30 @@ nav ul li a::before{
     width: 4px;
     margin-right: 5px;
 }
+nav ul li a::after{
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 4px;
+    margin-right: 5px;
+}
 nav ul li a:hover::before{
     content: '';
     display: inline-block;
     height: 15px;
     width: 4px;
     background-color: white;
-    transition: .7s;
-    transform: rotate(180deg);
+    transition: .9s;
+    transform: rotate(-360deg);
+}
+nav ul li a:hover::after{
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 4px;
+    background-color: white;
+    transition: .9s;
+    transform: rotate(360deg);
 }
 nav ul li a{
     text-decoration: none;
