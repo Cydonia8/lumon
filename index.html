@@ -5,39 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href="index.html">
-            <img src="media/img/lumon-menu-removebg-preview.png" alt="Logo de Lumon Industries">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="separacion.html">Separacion</a></li>
-                <li><a href="">Objetivo</a></li>
-                <li><a href="">Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="cabecera">
-            <h1>Bienvenido a Lumon, la industria del <span class="resaltar">futuro</span></h1>
-            <a href="#introduccion"><i class="fa-solid fa-chevron-down"></i></a>
-        </div>
-        <div id="introduccion">
-            <h2>Descubre la <span class="resaltar">separacion</span>, la nueva revolucion de nuestra era</h2>
-            <div class="testimonio">
-                <blockquote>Es el mayor avance en toda la historia de la humanidad</blockquote>
-                <span>Jame Eagan</span>
+    <div class="grid-container">
+        <header>
+            <a href="index.html">
+                <img src="media/img/lumon-menu-removebg-preview.png" alt="Logo de Lumon Industries">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="separacion.html">Separacion</a></li>
+                    <li><a href="trabajo.html">Trabajos</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="cabecera" >
+                <h1>Bienvenido a Lumon, la industria del <span class="resaltar">futuro</span></h1>
+                <a href="#introduccion"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
-            <div class="testimonio">
-                <blockquote>Lumon ha cambiado el dia a dia de millones de personas</blockquote>
-                <span>Helena Eagan</span>
+            <div id="introduccion">
+                <h2 data-aos="fade-up" data-aos-duration="2000">Descubre la <span class="resaltar">separacion</span>, la nueva revolucion de nuestra era</h2>
+                <div class="testimonio" data-aos="fade-right" data-aos-duration="2000" >
+                    <blockquote>Es el mayor avance en toda la historia de la humanidad</blockquote>
+                    <span>Jame Eagan</span>
+                </div>
+                <div class="testimonio" data-aos="fade-left" data-aos-duration="1500">
+                    <blockquote>Lumon ha cambiado el dia a dia de millones de personas</blockquote>
+                    <span>Helena Eagan</span>
+                </div>
             </div>
-        </div>
-    </main>
+            <div class="explicacion">
+                <p>
+                    Gracias a la separacion, millones de personas han mejorado su vida logrando la tan ansiada conciliacion entre vida laboral y vida personal. Conoce <a href="separacion.html">mas sobre este proceso, llamado originalmente Severance, aqui.</a>
+                </p>
+                <img src="media/img/folleto.jpg" alt="">
+                <h3>Descubre los trabajos disponibles en la familia Lumon</h3>
+            </div>
+        </main>
+    </div>
+    <footer>{
+        
+    </footer>
 </body>
 </html>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
