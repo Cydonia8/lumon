@@ -33,6 +33,7 @@ body{
     background-color: black;
     font-family: 'Manifold Demibold';
     color: white;
+    letter-spacing: 0.2em;
 }
 .grid-container{
     display: grid;
@@ -110,7 +111,6 @@ h1{
     left: 50%;
     animation-name: movimientoFlecha;
     animation-duration: 1.5s;
-    animation-delay: 1s;
     animation-fill-mode: backwards;
     animation-iteration-count: infinite;
 }
@@ -125,6 +125,9 @@ h1{
     font-size: 2em;
     text-align: center;
     height: 100vh;
+}
+#introduccion h2{
+    margin-left: 0.2rem;
 }
 blockquote:before { 
     content: open-quote; 
@@ -179,9 +182,9 @@ blockquote:after  {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10rem;
 }
-.refinamiento-gif span{
-    font-size: 2rem;
+.difuminado{
     backdrop-filter: blur(3px);
     padding: 2rem;
     border-radius: 20px;
@@ -189,9 +192,36 @@ blockquote:after  {
 .trabajos h2{
     font-size: 3em;
     color: white;
-    margin: 0;
 }
 .trabajos{
     width: 100%;
+    text-align: center;
+}
+.trabajos p{
+    font-size: 2rem;
+}
+#refiner{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+.caracteristicas-refinadores{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+}
+#work1{
+    width: 50%;
+    border-radius: 10px;
+}
+.caracteristicas-refinadores ul{
+    width: 50%;
+    margin-top: 4rem;
+}
+.caracteristicas-refinadores li{
+    margin-bottom: 4rem;
+    font-size: larger;
+    list-style: upper-roman;
 }
 
