@@ -276,6 +276,7 @@ blockquote:after  {
 .explicacion-separacion{
     display: flex;
     align-items: center;
+    margin-bottom: 10rem;
 }
 .explicacion-separacion p{
     max-width: 75ch;
@@ -286,7 +287,7 @@ blockquote:after  {
     width: 40%;
 }
 .ejemplo{
-    width: 80vh;
+    width: 100%;
     height: 10vh;
     margin-bottom: 7rem;
 }
@@ -297,7 +298,7 @@ blockquote:after  {
     gap: 50px;
 }
 .container-animacion p{
-    margin: 0;
+    text-align: center;
 }
 #linea1::after{
     content: '';
