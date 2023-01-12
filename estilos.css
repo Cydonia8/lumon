@@ -25,6 +25,19 @@
         bottom: 2%;
     }
 }
+@keyframes avanceLinea {
+    0%{
+        width: 5vw;
+    }25%{
+        width: 20vw;
+    }50%{
+        width: 45vw;
+    }75%{
+        width: 65vw;
+    }100%{
+        width: 80vw;
+    }
+}
 html{
     scroll-behavior: smooth;
 }
@@ -183,6 +196,7 @@ blockquote:after  {
 }
 .explicacion p{
     line-height: 5rem;
+    max-width: 75ch;
 }
 .explicacion a{
     color: white;
@@ -213,9 +227,6 @@ blockquote:after  {
 .trabajos{
     width: 100%;
     text-align: center;
-}
-.trabajos p{
-    font-size: 2rem;
 }
 #refiner{
     width: 90%;
@@ -253,8 +264,60 @@ blockquote:after  {
     border-radius: 10px;
 }
 .optica-trabajo p{
-    width: 50%;
+    max-width: 75ch;
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
+#separacion h2{
+    font-size: 3em;
+    text-align: center;
+}
 
+.explicacion-separacion{
+    display: flex;
+    align-items: center;
+}
+.explicacion-separacion p{
+    max-width: 75ch;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.explicacion-separacion img{
+    width: 40%;
+}
+.ejemplo{
+    width: 80vh;
+    height: 10vh;
+    margin-bottom: 7rem;
+}
+.container-animacion{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 50px;
+}
+.container-animacion p{
+    margin: 0;
+}
+#linea1::after{
+    content: '';
+    height: 5px;
+    width: 5vw;
+    background-color: white;
+    display: block;
+    animation-name: avanceLinea;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+#linea2::after{
+    content: '';
+    height: 5px;
+    width: 5vw;
+    background-color: white;
+    display: block;
+    animation-name: avanceLinea;
+    animation-duration: 7s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
