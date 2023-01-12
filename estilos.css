@@ -338,3 +338,36 @@ blockquote:after  {
     width: 40%;
     border-radius: 15px;
 }
+.impacto-separacion{
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Optima';
+}
+.impacto-separacion td,th{
+    padding: 1rem;
+}
+.impacto-separacion td{
+    border-right: 2px solid white;
+}
+.impacto-separacion td{
+    border-bottom: 2px solid white;
+}
+.impacto-separacion tr:last-of-type td{
+    border-bottom: none;
+}
+.impacto-separacion td:last-of-type{
+    border-right: none;
+}
+.impacto-separacion th{
+    border-bottom: 2px solid white;
+}
+p,li{
+    font-family: 'Optima';
+}
+li:has(a){
+    font-family: 'Manifold Demibold';
+}
+
