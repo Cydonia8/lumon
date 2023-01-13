@@ -420,4 +420,18 @@ li:has(a){
     cursor: pointer;
     font-size: larger;
 }
+#ficha-producto h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.container-ficha{
+    font-family: 'Optima';
+    display: flex;
+    padding: 2rem;
+    gap: 20px;
+}
+.container-ficha img{
+    width: 40%;
+    border-radius: 15px;
+}
 
