@@ -269,6 +269,17 @@ blockquote:after  {
     font-size: 1.5rem;
     line-height: 2.5rem;
 }
+#severance{
+    font-size: 6rem;
+}
+.cerebros-separados{
+    display: flex;
+    gap: 15px;
+    padding: 2rem;
+}
+.cerebros-separados img{
+    width: 70%
+}
 #separacion h2{
     font-size: 3em;
     text-align: center;
@@ -283,9 +294,6 @@ blockquote:after  {
     max-width: 75ch;
     font-size: 2rem;
     line-height: 2.5rem;
-}
-.explicacion-separacion img{
-    width: 40%;
 }
 .ejemplo{
     width: 100%;
@@ -369,5 +377,30 @@ p,li{
 }
 li:has(a){
     font-family: 'Manifold Demibold';
+}
+#tienda h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.contenedor-tienda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    width: 80%;
+    margin: auto;
+}
+.contenedor-tienda .producto{
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.contenedor-tienda .producto img{
+    width: 50%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.932);
 }
 
