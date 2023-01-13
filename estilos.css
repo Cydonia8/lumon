@@ -397,10 +397,27 @@ li:has(a){
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1rem;
+    justify-content: space-between;
 }
 .contenedor-tienda .producto img{
     width: 50%;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.932);
+    cursor: pointer;
+}
+.contenedor-tienda .producto img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.contenedor-tienda .producto a{
+    color: white;
+}
+.añadir{
+    font-family: inherit;
+    padding: 0.5rem;
+    background-color: white;
+    cursor: pointer;
+    font-size: larger;
 }
 
