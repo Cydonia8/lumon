@@ -429,6 +429,9 @@ li:has(a){
     display: flex;
     padding: 2rem;
     gap: 20px;
+    border: 1.5px double white;
+    width: 80%;
+    margin: auto;
 }
 .container-ficha img{
     width: 40%;
