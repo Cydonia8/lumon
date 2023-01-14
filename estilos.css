@@ -433,7 +433,7 @@ li:has(a){
     filter: drop-shadow(1.5px 5px 10px rgb(222, 220, 220));
     transition: .7s;
 }
-#ficha-producto h1{
+h1{
     font-size: 3rem;
     text-align: center;
 }
@@ -483,18 +483,17 @@ li:has(a){
         justify-content: center;
     }
     h1{
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
     header{
         position: fixed;
         width: 100%;
         z-index: 100;
-        left: 500px;
+        left: -500px;
         height: auto;
         transition: .8s;
-    }
-    h1:hover header{
-        left: 0px;
     }
     .abrir-menu{
         display: block;
@@ -504,6 +503,38 @@ li:has(a){
         left: 0;
         transition: .8s;
     }
+    .fijar-mostrar-menu{
+        position: fixed;
+    }
+    .container-ficha img{
+        width: 100%;
+    }
+    .container-ficha{
+        flex-direction: column;
+    }
 
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    .grid-container{
+        display: block;
+    }
+    header{
+        position: fixed;
+        z-index: 100;
+        left: -500px;
+        height: auto;
+        transition: .8s;
+    }
+    .abrir-menu{
+        display: block;
+        z-index: 999;
+    }
+    .mostrar-menu{
+        left: 0;
+        transition: .8s;
+    }
+    .container-ficha img{
+        height: 40ch;
+    }
 }
 
