@@ -48,6 +48,13 @@ body{
     color: white;
     letter-spacing: 0.2em;
 }
+.abrir-menu{
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 1.5rem;
+}
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 0.15fr;
@@ -399,12 +406,14 @@ li:has(a){
     text-align: center;
     padding: 1rem;
     justify-content: space-between;
+    
 }
 .contenedor-tienda .producto img{
     width: 50%;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.932);
     cursor: pointer;
+    filter: drop-shadow(3px 7px 12px rgb(222, 220, 220));
 }
 .contenedor-tienda .producto img:hover{
     transform: scale(1.1);
@@ -414,11 +423,15 @@ li:has(a){
     color: white;
 }
 .añadir{
-    font-family: inherit;
+    font-family: 'Manifold Demibold';
     padding: 0.5rem;
     background-color: white;
     cursor: pointer;
     font-size: larger;
+}
+.añadir:hover{
+    filter: drop-shadow(1.5px 5px 10px rgb(222, 220, 220));
+    transition: .7s;
 }
 #ficha-producto h1{
     font-size: 3rem;
@@ -432,9 +445,65 @@ li:has(a){
     border: 1.5px double white;
     width: 80%;
     margin: auto;
+    border-radius: 10px;
+}
+.container-ficha h2{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .container-ficha img{
     width: 40%;
     border-radius: 15px;
+    filter: drop-shadow(3px 7px 12px rgb(222, 220, 220));
+    object-fit: cover;
+}
+.container-ficha .descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.container-ficha .descripcion-producto p{
+    max-width: 75ch;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.7rem;
+}
+.precio-antiguo{
+    text-decoration: line-through;
+}
+
+@media screen and (max-width: 576px) {
+    .grid-container{
+        display: block;
+    }
+    .contenedor-tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        justify-content: center;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        left: 500px;
+        height: auto;
+        transition: .8s;
+    }
+    h1:hover header{
+        left: 0px;
+    }
+    .abrir-menu{
+        display: block;
+        z-index: 999;
+    }
+    .mostrar-menu{
+        left: 0;
+        transition: .8s;
+    }
+
 }
 
