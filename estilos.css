@@ -473,7 +473,11 @@ h1{
 .precio-antiguo{
     text-decoration: line-through;
 }
-
+@media screen and (max-width: 576px) {
+    *{
+        font-size: 1.5rem!important;
+    }
+}
 @media screen and (max-width: 767px) {
     .grid-container{
         display: block;
