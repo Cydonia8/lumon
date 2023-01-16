@@ -200,6 +200,7 @@ blockquote:after  {
     font-size: 1.5rem;
     text-align: center;
     color: white;
+    padding: 1rem;
 }
 .explicacion p{
     line-height: 5rem;
@@ -277,7 +278,7 @@ blockquote:after  {
     line-height: 2.5rem;
 }
 #severance{
-    font-size: 6rem;
+    font-size: 5rem;
 }
 .cerebros-separados{
     display: flex;
@@ -473,7 +474,7 @@ h1{
     text-decoration: line-through;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
     .grid-container{
         display: block;
     }
@@ -483,7 +484,7 @@ h1{
         justify-content: center;
     }
     h1{
-        font-size: 2.3rem;
+        font-size: 2rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
@@ -491,9 +492,12 @@ h1{
         position: fixed;
         width: 100%;
         z-index: 100;
-        left: -500px;
+        left: -1000px;
         height: auto;
         transition: .8s;
+    }
+    header{
+        border-left: none;
     }
     .abrir-menu{
         display: block;
@@ -512,7 +516,75 @@ h1{
     .container-ficha{
         flex-direction: column;
     }
-
+    #introduccion div.testimonio{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .explicacion{
+        margin-top: 40vh;
+        padding: 1rem;
+    }
+    .explicacion p{
+        line-height: initial;
+    }
+    #severance{
+        font-size: 2rem;
+    }
+    .container-animacion > div{
+        animation: none;
+    }
+    .impacto-separacion{
+        padding: 0;
+        font-size: initial;
+    }
+    h2{
+        font-size: 1.7em!important;
+    }
+    .explicacion-separacion{
+        flex-direction: column;
+    }
+    .cerebros-separados > img{
+        width: 50%;
+    }
+    .explicacion-separacion p{
+        margin: auto;
+        padding: 1rem;
+        font-size: inherit;
+    }
+    .ejemplo{
+        margin-bottom: 15rem;
+    }
+    .funcionamiento-separacion{
+        flex-direction: column;
+    }
+    .funcionamiento-separacion img{
+        width: 100%;
+    }
+    .impacto-separacion td,th{
+        padding: 0.5rem;
+    }
+    .impacto-separacion{
+        width: 90%;
+        margin: auto;
+    }
+    header{
+        border-left: none;
+    }
+    .caracteristicas-refinadores{
+        flex-direction: column-reverse;
+    }
+    #work1{
+        width: 100%;
+    }
+    .optica-trabajo{
+        flex-direction: column-reverse;
+    }
+    #work2{
+        width: 100%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
     .grid-container{
@@ -521,9 +593,10 @@ h1{
     header{
         position: fixed;
         z-index: 100;
-        left: -500px;
+        left: -1000px;
         height: auto;
         transition: .8s;
+        border-left: none;
     }
     .abrir-menu{
         display: block;
@@ -536,5 +609,12 @@ h1{
     .container-ficha img{
         height: 40ch;
     }
+    #severance{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.7em!important;
+    }
+    
 }
 
