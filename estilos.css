@@ -502,6 +502,9 @@ h1{
     .abrir-menu{
         display: block;
         z-index: 999;
+        background-color: white;
+        border: none;
+        border-radius: 4px;
     }
     .mostrar-menu{
         left: 0;
