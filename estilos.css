@@ -242,6 +242,16 @@ blockquote:after  {
     margin: auto;
     border-radius: 10px;
 }
+.trabajos p:first-of-type{
+    max-width: 75ch;
+    margin: 2rem auto auto auto;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#macrodata-sign{
+    margin-top: 3rem;
+}
 .caracteristicas-refinadores{
     display: flex;
     align-items: center;
@@ -501,7 +511,7 @@ footer .copyright{
 }
 @media screen and (max-width: 576px) {
     .grid-container h2{
-        font-size: 1.5rem!important;
+        font-size: 1.4rem!important;
     }
     footer{
         flex-direction: column;
@@ -510,6 +520,17 @@ footer .copyright{
     }
     footer img{
         width: 50%;
+    }
+    .trabajos p:first-of-type{
+        font-size: 1rem;
+        padding: 0.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #macrodata-sign{
+        margin-top: 3rem;
+        width: 80%;
     }
 }
 @media screen and (max-width: 767px) {
