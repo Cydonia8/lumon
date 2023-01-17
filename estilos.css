@@ -78,6 +78,7 @@ header{
 }
 header a{
     margin-bottom: 4rem;
+    text-transform: uppercase;
 }
 nav ul li{
     margin-bottom: 8rem;
@@ -473,14 +474,50 @@ h1{
 .precio-antiguo{
     text-decoration: line-through;
 }
+footer ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+footer ul li{
+    margin-bottom: 1rem;
+}
+footer{
+    border-top: 2px double white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    width: 15%;
+}
+footer .copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
 @media screen and (max-width: 576px) {
-    *{
+    .grid-container h2{
         font-size: 1.5rem!important;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer img{
+        width: 50%;
     }
 }
 @media screen and (max-width: 767px) {
     .grid-container{
         display: block;
+    }
+    footer img{
+        width: 30%;
     }
     .contenedor-tienda{
         grid-template-columns: 1fr;
@@ -491,7 +528,7 @@ h1{
         font-size: 2rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-    }
+    }  
     header{
         position: fixed;
         width: 100%;
@@ -596,6 +633,9 @@ h1{
 @media (min-width: 768px) and (max-width: 1200px) {
     .grid-container{
         display: block;
+    }
+    footer img{
+        width: 30%;
     }
     header{
         position: fixed;
