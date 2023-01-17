@@ -206,6 +206,7 @@ blockquote:after  {
 .explicacion p{
     line-height: 5rem;
     max-width: 75ch;
+    margin: auto;
 }
 .explicacion a{
     color: white;
