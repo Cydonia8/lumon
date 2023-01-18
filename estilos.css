@@ -405,7 +405,7 @@ li:has(a){
     grid-template-rows: 1fr 1fr;
     gap: 50px;
     width: 80%;
-    margin: auto;
+    margin: auto auto 3rem auto;
 }
 .contenedor-tienda .producto{
     border: 2px solid white;
