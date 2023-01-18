@@ -253,6 +253,9 @@ blockquote:after  {
     gap: 20px;
     padding: 2rem;
 }
+#serpiente{
+    width: 100%;
+}
 #work1{
     width: 50%;
     border-radius: 10px;
@@ -502,18 +505,24 @@ h1{
 }
 #nosotros .principios ul{
     list-style: upper-roman;
-    font-size: 2.5rem;
     text-align: center;
 }
 #nosotros .principios ul li{
     margin-bottom: 2rem;
     text-decoration:underline;
+    font-size: 2.5rem;
 }
 #nosotros .principios{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+#nosotros .principios ul~span{
+    font-size: 1.5rem;
+    text-align: center;
 }
 footer ul{
     margin: 0;
@@ -563,6 +572,9 @@ footer .copyright{
     #macrodata-sign{
         margin-top: 3rem;
         width: 80%;
+    }
+    #nosotros .principios ul li{
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 767px) {
