@@ -479,6 +479,42 @@ h1{
 .precio-antiguo{
     text-decoration: line-through;
 }
+.propaganda{
+    font-family: 'Scriptorama';
+    font-size: 2rem;
+}
+#nosotros .historia{
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+#nosotros .historia span:first-of-type{
+    text-align: left;
+}
+#nosotros .historia span:nth-of-type(2){
+    text-align: right;
+}
+#nosotros .principios ul{
+    list-style: upper-roman;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#nosotros .principios ul li{
+    margin-bottom: 2rem;
+    text-decoration:underline;
+}
+#nosotros .principios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
 footer ul{
     margin: 0;
     list-style: none;
@@ -495,6 +531,7 @@ footer{
 }
 footer img{
     width: 15%;
+    object-fit: contain;
 }
 footer .copyright{
     display: flex;
