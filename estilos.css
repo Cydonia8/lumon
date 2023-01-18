@@ -27,15 +27,9 @@
 }
 @keyframes avanceLinea {
     0%{
-        width: 5vw;
-    }25%{
-        width: 20vw;
-    }50%{
-        width: 45vw;
-    }75%{
-        width: 65vw;
+        width: 0%;
     }100%{
-        width: 80vw;
+        width: 100%;
     }
 }
 html{
