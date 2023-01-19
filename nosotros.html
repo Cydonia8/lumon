@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <script src="script/script_menu.js" defer></script>
+    <script src="script/traductor.js" defer></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/media/img/cerebro.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -36,7 +37,7 @@
             <div class="historia">
                 <span class="resumen">Lumon Industries, fundada en 1865 por Kier Egan, es la industria de biotecnologia lider en todo el mundo.</span>
                 <span class="resumen">Apostamos por una revolucion basada en la evolucion, evitando los dilemas morales para dar rienda suelta a la ciencia.</span>
-                <span class="resumen"> Conoce los principios basicos de la filosofia Lumon.</span>
+                <span class="resumen"> Conoce los principios basicos de la filosofia Lumon. Todos ellos combinados dan lugar a nuestra gran familia.</span>
             </div>
             <section class="principios">
                 
@@ -51,7 +52,19 @@
                     <li>Honradez</li>
                     <li>Picardia</li>
                 </ul>
-                <span>Todos ellos combinados dan lugar a la gran familia que es Lumon.</span>
+            </section>
+            <section class="traductor">
+                <span>Curiosidad. El primer idioma oficial de Lumon fue el esperanto, ya que apuntaba a ser la lengua mas hablada del mundo. Te dejamos un traductor para que imagines como eran las conversaciones antiguamente en Lumon.</span>
+                <form id="form-traduccion">
+                    <div class="form-group">
+                        <label for="spa">Español</label>
+                        <textarea id="entrada" placeholder="Escribe texto a traducir" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="eng">Esperanto</label>
+                        <textarea readonly id="salida" placeholder="Traduccion" class="form-control"></textarea>
+                    </div>
+                </form>
             </section>
         </main>
     </div>

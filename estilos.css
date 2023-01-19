@@ -524,6 +524,41 @@ h1{
     font-size: 1.5rem;
     text-align: center;
 }
+#nosotros .traductor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+#nosotros .traductor span:first-child{
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 4rem;
+}
+#form-traduccion{
+    width: 60%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+.form-group{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+div.form-group:first-of-type{
+    padding: 2.5rem;
+    border-bottom: 2px double white;
+}
+.form-group textarea{
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
 footer ul{
     margin: 0;
     list-style: none;
@@ -576,6 +611,7 @@ footer .copyright{
     #nosotros .principios ul li{
         font-size: 1.8rem;
     }
+    
 }
 @media screen and (max-width: 767px) {
     .grid-container{
@@ -694,6 +730,10 @@ footer .copyright{
     #work2{
         width: 100%;
     }
+    .form-group{
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
     .grid-container{
@@ -726,6 +766,10 @@ footer .copyright{
     }
     h2{
         font-size: 1.7em!important;
+    }
+    .form-group{
+        flex-direction: column;
+        gap: 2rem;
     }
     
 }
